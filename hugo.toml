@@ -1,4 +1,4 @@
-baseURL = 'https://return215.github.io/fwbp2023/'
+baseURL = 'http://fwbp2023.return215.xyz/'
 languageCode = 'en-us'
 title = 'Framework Stories'
 theme = 'hello-friend-ng'
@@ -32,3 +32,8 @@ copyright = 'Bila tidak dicantumkan dalam artikel, konten dilindungi lisensi <a 
 [languages.id.params.logo]
 logoText = "Jiwa Yang Kembali"
 logoHomeLink = '/'
+
+[[menu.main]]
+identifier = "log"
+name       = "Blog"
+url        = "/log"
