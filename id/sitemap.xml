@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://fwbp2023.return215.xyz/id/</loc>
+    <lastmod>2023-08-28T16:14:26+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://fwbp2023.return215.xyz/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id"
+                href="http://fwbp2023.return215.xyz/id/"
+                />
+  </url><url>
+    <loc>http://fwbp2023.return215.xyz/id/log/</loc>
+    <lastmod>2023-08-28T16:14:26+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://fwbp2023.return215.xyz/log/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id"
+                href="http://fwbp2023.return215.xyz/id/log/"
+                />
+  </url><url>
+    <loc>http://fwbp2023.return215.xyz/id/log/week01/</loc>
+    <lastmod>2023-08-28T16:14:26+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://fwbp2023.return215.xyz/log/week01/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id"
+                href="http://fwbp2023.return215.xyz/id/log/week01/"
+                />
+  </url><url>
+    <loc>http://fwbp2023.return215.xyz/id/about/</loc>
+    <lastmod>2023-08-28T16:14:26+07:00</lastmod>
+  </url><url>
     <loc>http://fwbp2023.return215.xyz/id/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -12,18 +54,6 @@
                 rel="alternate"
                 hreflang="id"
                 href="http://fwbp2023.return215.xyz/id/categories/"
-                />
-  </url><url>
-    <loc>http://fwbp2023.return215.xyz/id/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://fwbp2023.return215.xyz/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id"
-                href="http://fwbp2023.return215.xyz/id/"
                 />
   </url><url>
     <loc>http://fwbp2023.return215.xyz/id/tags/</loc>
