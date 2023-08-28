@@ -1,0 +1,34 @@
+baseURL = 'https://return215.github.io/fwbp2023/'
+languageCode = 'en-us'
+title = 'Framework Stories'
+theme = 'hello-friend-ng'
+paginate = 10
+enableGitInfo = true
+
+[params]
+# site settings
+homeSubtitle = "The journey is long"
+disableReadOtherPosts =  true
+enableGlobalLanguageMenu =  true
+# meta stuff
+description = "The journey of a human returning to the righteous path"
+keyword = "journey, blog, devlog, homepage"
+
+[taxonomies]
+tag      = "tags"
+category = "categories"
+
+[languages.en]
+title = "The Returning Soul"
+copyright = 'Otherwise stated per article, all content is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>.'
+
+[languages.en.params.logo]
+logoText = "The Returning Soul"
+logoHomeLink = '/'
+
+[languages.id]
+title = "Jiwa Yang Kembali"
+copyright = 'Bila tidak dicantumkan dalam artikel, konten dilindungi lisensi <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>.'
+[languages.id.params.logo]
+logoText = "Jiwa Yang Kembali"
+logoHomeLink = '/'
