@@ -37,3 +37,8 @@ logoHomeLink = '/'
 identifier = "log"
 name       = "Blog"
 url        = "/log"
+
+[[menu.main]]
+identifier = "about"
+name       = "About"
+url        = "/about"
