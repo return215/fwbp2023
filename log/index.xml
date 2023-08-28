@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Logs on The Returning Soul</title>
+    <link>https://return215.github.io/fwbp2023/log/</link>
+    <description>Recent content in Logs on The Returning Soul</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Otherwise stated per article, all content is licensed under &lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;.</copyright>
+    <lastBuildDate>Mon, 28 Aug 2023 13:14:37 +0700</lastBuildDate><atom:link href="https://return215.github.io/fwbp2023/log/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week 1: WinForms Application</title>
+      <link>https://return215.github.io/fwbp2023/log/week01/</link>
+      <pubDate>Mon, 28 Aug 2023 13:14:37 +0700</pubDate>
+      
+      <guid>https://return215.github.io/fwbp2023/log/week01/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
