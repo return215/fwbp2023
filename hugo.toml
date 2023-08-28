@@ -7,30 +7,30 @@ enableGitInfo = true
 
 [params]
 # site settings
-homeSubtitle = "The journey is long"
+homeSubtitle = "Even scaffolds talk."
 disableReadOtherPosts =  true
 enableGlobalLanguageMenu =  true
 # meta stuff
-description = "The journey of a human returning to the righteous path"
-keyword = "journey, blog, devlog, homepage"
+description = "Cerita dari setiap kerangka kerja yang digunakan"
+keyword = "journey, blog, devlog, homepage, framework, laravel, dotnet, .net, winforms, codeigniter, ci"
 
 [taxonomies]
 tag      = "tags"
 category = "categories"
 
 [languages.en]
-title = "The Returning Soul"
+title = "Framework Stories"
 copyright = 'Otherwise stated per article, all content is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>.'
 
 [languages.en.params.logo]
-logoText = "The Returning Soul"
+logoText = "FrameworkStories()"
 logoHomeLink = '/'
 
 [languages.id]
-title = "Jiwa Yang Kembali"
-copyright = 'Bila tidak dicantumkan dalam artikel, konten dilindungi lisensi <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>.'
+title = "Cerita Kerangka Kerja"
+copyright = 'Jika tidak dinyatakan di setiap artikel, semua konten dilisensikan di bawah lisensi <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>.'
 [languages.id.params.logo]
-logoText = "Jiwa Yang Kembali"
+logoText = "CeritaKerangkaKerja()"
 logoHomeLink = '/'
 
 [[menu.main]]
