@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://return215.github.io/fwbp2023/id/categories/</loc>
+    <loc>http://fwbp2023.return215.xyz/id/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://return215.github.io/fwbp2023/categories/"
+                href="http://fwbp2023.return215.xyz/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="id"
-                href="https://return215.github.io/fwbp2023/id/categories/"
+                href="http://fwbp2023.return215.xyz/id/categories/"
                 />
   </url><url>
-    <loc>https://return215.github.io/fwbp2023/id/</loc>
+    <loc>http://fwbp2023.return215.xyz/id/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://return215.github.io/fwbp2023/"
+                href="http://fwbp2023.return215.xyz/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="id"
-                href="https://return215.github.io/fwbp2023/id/"
+                href="http://fwbp2023.return215.xyz/id/"
                 />
   </url><url>
-    <loc>https://return215.github.io/fwbp2023/id/tags/</loc>
+    <loc>http://fwbp2023.return215.xyz/id/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://return215.github.io/fwbp2023/tags/"
+                href="http://fwbp2023.return215.xyz/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="id"
-                href="https://return215.github.io/fwbp2023/id/tags/"
+                href="http://fwbp2023.return215.xyz/id/tags/"
                 />
   </url>
 </urlset>
