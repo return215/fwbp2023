@@ -1,0 +1,22 @@
+# exclude workspace cache
+.obsidian/workspace*.json
+
+# Exclude plugins
+.obsidian/plugins/*
+.obsidian/plugins/community-plugins.json
+
+# exclude themes
+.obsidian/themes/*
+
+# This file is used to keep track of last auto backup/pull
+.obsidian-git-data
+
+# Exclude Untitled Notes
+Untitled*
+# Exclude "bad" names
+null*
+
+# Add below lines to exclude OS settings and caches
+.trash/
+.DS_Store
+
