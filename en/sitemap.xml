@@ -2,24 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://fwbp2023.return215.xyz/about/</loc>
-    <lastmod>2023-09-04T07:38:33+07:00</lastmod>
-  </url><url>
-    <loc>http://fwbp2023.return215.xyz/log/</loc>
-    <lastmod>2023-09-04T07:38:33+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="id"
-                href="http://fwbp2023.return215.xyz/id/log/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://fwbp2023.return215.xyz/log/"
-                />
-  </url><url>
     <loc>http://fwbp2023.return215.xyz/</loc>
-    <lastmod>2023-09-04T07:38:33+07:00</lastmod>
+    <lastmod>2023-09-03T09:11:36+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="id"
@@ -31,8 +15,21 @@
                 href="http://fwbp2023.return215.xyz/"
                 />
   </url><url>
+    <loc>http://fwbp2023.return215.xyz/log/</loc>
+    <lastmod>2023-09-03T09:11:36+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="id"
+                href="http://fwbp2023.return215.xyz/id/log/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://fwbp2023.return215.xyz/log/"
+                />
+  </url><url>
     <loc>http://fwbp2023.return215.xyz/log/week01/</loc>
-    <lastmod>2023-09-04T07:38:33+07:00</lastmod>
+    <lastmod>2023-09-03T09:11:36+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="id"
@@ -43,6 +40,9 @@
                 hreflang="en"
                 href="http://fwbp2023.return215.xyz/log/week01/"
                 />
+  </url><url>
+    <loc>http://fwbp2023.return215.xyz/about/</loc>
+    <lastmod>2023-09-03T09:11:36+07:00</lastmod>
   </url><url>
     <loc>http://fwbp2023.return215.xyz/categories/</loc>
     <xhtml:link
