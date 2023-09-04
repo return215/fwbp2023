@@ -5,9 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="Tugas minggu ini adalah membuat aplikasi Windows Forms. Aplikasi harus bisa menerima input pengguna dan melakukan update pada form.
-Untuk proyek WinForms kali ini, saya mengimplementasikan rhythm game score converter, dimana perhitungan skor akan berubah tergantung dari jenis rhythm game yang dipilih.
-Kesulitan yang saya alami bukanlah dalam membuat form, namun dalam menggunakan data yang saya berikan. Saya dulu punya pengalaman dengan bahasa C# sekitar 6 tahun yang lalu. Ketika itu saya membuat proyek gim berbasis music menggunakan Unity." />
+<meta name="description" content="Tes" />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -16,7 +14,7 @@ Kesulitan yang saya alami bukanlah dalam membuat form, namun dalam menggunakan d
 
     <title>
         
-            Pertemuan 01: WinForms Application :: Cerita Kerangka Kerja 
+            Pertemuan 01: WinForms Application :: Jiwa Yang Kembali 
         
     </title>
 
@@ -38,17 +36,13 @@ Kesulitan yang saya alami bukanlah dalam membuat form, namun dalam menggunakan d
 
 
 <meta itemprop="name" content="Pertemuan 01: WinForms Application">
-<meta itemprop="description" content="Tugas minggu ini adalah membuat aplikasi Windows Forms. Aplikasi harus bisa menerima input pengguna dan melakukan update pada form.
-Untuk proyek WinForms kali ini, saya mengimplementasikan rhythm game score converter, dimana perhitungan skor akan berubah tergantung dari jenis rhythm game yang dipilih.
-Kesulitan yang saya alami bukanlah dalam membuat form, namun dalam menggunakan data yang saya berikan. Saya dulu punya pengalaman dengan bahasa C# sekitar 6 tahun yang lalu. Ketika itu saya membuat proyek gim berbasis music menggunakan Unity."><meta itemprop="datePublished" content="2023-09-03T09:09:09+07:00" />
-<meta itemprop="dateModified" content="2023-09-03T09:11:36+07:00" />
-<meta itemprop="wordCount" content="848">
+<meta itemprop="description" content="Tes"><meta itemprop="datePublished" content="2023-08-28T16:13:00+07:00" />
+<meta itemprop="dateModified" content="2023-09-04T07:35:03+07:00" />
+<meta itemprop="wordCount" content="1">
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Pertemuan 01: WinForms Application"/>
-<meta name="twitter:description" content="Tugas minggu ini adalah membuat aplikasi Windows Forms. Aplikasi harus bisa menerima input pengguna dan melakukan update pada form.
-Untuk proyek WinForms kali ini, saya mengimplementasikan rhythm game score converter, dimana perhitungan skor akan berubah tergantung dari jenis rhythm game yang dipilih.
-Kesulitan yang saya alami bukanlah dalam membuat form, namun dalam menggunakan data yang saya berikan. Saya dulu punya pengalaman dengan bahasa C# sekitar 6 tahun yang lalu. Ketika itu saya membuat proyek gim berbasis music menggunakan Unity."/>
+<meta name="twitter:description" content="Tes"/>
 
 
 
@@ -56,7 +50,7 @@ Kesulitan yang saya alami bukanlah dalam membuat form, namun dalam menggunakan d
 
 
 
-    <meta property="article:published_time" content="2023-09-03 09:09:09 &#43;0700 &#43;0700" />
+    <meta property="article:published_time" content="2023-08-28 16:13:00 &#43;0700 &#43;0700" />
 
 
 
@@ -82,7 +76,7 @@ Kesulitan yang saya alami bukanlah dalam membuat form, namun dalam menggunakan d
         
             <span class="logo__mark">></span>
             <span class="logo__text ">
-                CeritaKerangkaKerja()</span>
+                Jiwa Yang Kembali</span>
             <span class="logo__cursor" style=
                   "
                    
@@ -146,88 +140,7 @@ Kesulitan yang saya alami bukanlah dalam membuat form, namun dalam menggunakan d
             
 
             <div class="post-content">
-                <p>Tugas minggu ini adalah membuat aplikasi Windows Forms. Aplikasi harus bisa menerima input pengguna dan melakukan update pada form.</p>
-<p>Untuk proyek WinForms kali ini, saya mengimplementasikan <em>rhythm game score converter</em>, dimana perhitungan skor akan berubah tergantung dari jenis <em>rhythm game</em> yang dipilih.</p>
-<p>Kesulitan yang saya alami bukanlah dalam membuat form, namun dalam menggunakan data yang saya berikan. Saya dulu punya pengalaman dengan bahasa C# sekitar 6 tahun yang lalu. Ketika itu saya membuat proyek <a href="https://github.com/HDX13-BeatCode/MathBeat.Unity">gim berbasis music menggunakan Unity</a>. Saya kembali mempelajarinya ketika pada mata kuliah Pemrograman Web diminta untuk membuat aplikasi ASP.NET Core. Mohon maaf, saya tidak mempublikasikan kode sumber untuk tugas tersebut.</p>
-<p>Kode untuk tugas minggu ini saya taruh di <a href="https://github.com/return215/fwbp2023-winforms/tree/master/WinForms-01">repositori GitHub milik saya</a>.</p>
-<h2 id="membuat-project">Membuat Project</h2>
-<p>Membuat project di Visual Studio 2022 sangat sederhana dan mudah.</p>
-<p><img src="01_project.png" alt="Selecting Windows Forms application when creating a new project"></p>
-<p><img src="02_dotnet6.png" alt="Selecting .NET 6.0 LTS when creating the project (Visual Studio was not responding when trying to take a screenshot, hence it has a white overlay)"></p>
-<p>Setelah itu, saya membuat repo Git dan saya <em>push</em> ke GitHub. Membuat layout pun cukup mudah. IDE yang saya pakai berjalan lambat karena CPU pada laptop saya kelas menengah ke bawah, dan menggunakan 8GB RAM pada <em>virtual machine</em> Windows 10 tidak membantu banyak. Setidaknya saya masih bisa menulis kode program yang bisa berjalan. Hampir.</p>
-<p>Tetapi sebelumnya, kita bahas dulu struktur data yang saya gunakan.</p>
-<h2 id="data-skor">Data Skor</h2>
-<p>Data Skor dibuat mengikuti struktur berikut:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">Name</span>: <span style="color:#ae81ff">name of score system</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">Judgements</span>: <span style="color:#75715e"># list of Judge values</span>
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">Name</span>: <span style="color:#ae81ff">name of judge 1</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">Value</span>: <span style="color:#ae81ff">2</span> <span style="color:#75715e"># weight value of judge</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">Used</span>: <span style="color:#66d9ef">true</span> <span style="color:#75715e"># whether the judge is used or not</span>
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">Name</span>: <span style="color:#ae81ff">name of judge 2</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">Value</span>: <span style="color:#ae81ff">1</span> <span style="color:#75715e"># weight value of judge</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">Used</span>: <span style="color:#66d9ef">true</span> <span style="color:#75715e"># whether the judge is used or not</span>
-</span></span></code></pre></div><p>Struktur ini diimplementasikan dalam C# dengan nama <a href="https://github.com/return215/fwbp2023-winforms/blob/master/WinForms-01/ScoringSystem.cs"><code>ScoringSystem</code></a> dan <a href="https://github.com/return215/fwbp2023-winforms/blob/master/WinForms-01/JudgeValue.cs"><code>JudgeValue</code></a> untuk daftar nilai <em>judge</em>. Detail lebih lanjut dapat dilihat di file masing-masing.</p>
-<p>Dalam <code>ScoringSystem</code>, saya juga menambahkan fungsi <code>CalculateScore</code> yang menerima daftar jumlah tiap <em>judge</em> dan mengembalikan nilai berupa <em>tuple</em> dua bilangan bertipe <code>double</code>: skor mentah/asal, dan skor yang dinormalisasi dengan rentang antara 0 dan 1 inklusif.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> (<span style="color:#66d9ef">double</span>, <span style="color:#66d9ef">double</span>) CalculateScore(<span style="color:#66d9ef">int</span>[] judgeCounts) {
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">double</span> score = <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">double</span> maxWeight = <span style="color:#66d9ef">double</span>.MinValue;
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">double</span> totalNotes = <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i = <span style="color:#ae81ff">0</span>; i &lt; Judgements.Count; i++)
-</span></span><span style="display:flex;"><span>	{
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">var</span> judge = Judgements[i];
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> (i &gt;= judgeCounts.Length) <span style="color:#66d9ef">break</span>;
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> (!judge.Used) <span style="color:#66d9ef">continue</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>		maxWeight = Math.Max(maxWeight, judge.Value);
-</span></span><span style="display:flex;"><span>		score += judge.Value * judgeCounts[i];
-</span></span><span style="display:flex;"><span>		totalNotes += judgeCounts[i];
-</span></span><span style="display:flex;"><span>	}
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">double</span> normalizedScore = score / maxWeight / totalNotes;
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> (score, normalizedScore);
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>Potongan kode ini melakukan iterasi untuk tiap <em>Judgement</em> dan jumlah masing-masing. Jika salah satu dari <em>list</em> tersebut habis, hentikan perhitungan. Jika ternyata <em>Judgement</em> tidak terpakai, maka tidak akan masuk perhitungan skor.</p>
-<p>Skor dihitung dari hasil jumlah dasi tiap hasil perkalian antara bobot nilai <em>judge</em> dan jumlahnya. Sementara itu, total jumlah and nilai bobot maksimum dicatat dalam variabel terpisah. Nilai <code>score</code> adalah skor mentah/asal, sedangakan nilai <code>normalizedScore</code> dihitung dari skor asal dibagi bobot maksimum dan total jumlah yang dicatat sebelumnya.</p>
-<p>Data ditampung langsung dalam kelas <a href="https://github.com/return215/fwbp2023-winforms/blob/master/WinForms-01/ScoringData.cs"><code>ScoringData</code></a>, dengan melakukan inisialisasi daftar sistem skor dan nilai <em>Judgement</em>. Data nilai diambil dari berbagai sumber:</p>
-<ul>
-<li><a href="http://aaronin.jp/ddrallcalc.html">Dance Dance Revolution Dance Level Calculator</a></li>
-<li>Waterfall Theme for StepMania/ITG</li>
-<li>CHUNITHM</li>
-</ul>
-<p>Untuk DDRMAX, saya menggunakan varian MIGS agar bisa mewaiki <em>Judgement</em> Marvelous dengan lebih tepat.</p>
-<p>Kemudian, saya mengalami kendala saat ingin menggunakan data tersebut yang mengakibatkan program tidak bisa berjalan.</p>
-<h2 id="terjadi-nullreferenceexception">Terjadi <code>NullReferenceException</code></h2>
-<p>Ketika mencoba memuat data dari objek <code>ScoringData</code>, terjadi <code>NullReferenceException</code>. Dengan kata lain, program ingin mencoba mengakses properti <code>Systems</code>, namun terbaca sebagai <code>null</code>, sehingga program terhenti. Awalnya saya mengira ada kesalahan dalam mengisi data <code>ComboBox</code>, namu tidak ada masalah di sana.</p>
-<p><img src="03_init_problem.png" alt="The NullReferenceException caused by line 21 in ScoringData when initializing Systems field"></p>
-<p>Masalah sebenarnya terjadi ketika melakukan inisialisasi list <code>Judgements</code>. Memberi nilai pada variabel belum tentu akan membuat objek yang bersangkutan, akhirnya saya tambahkan inisialisasi objek list.</p>
-<p><img src="04_fix_problem.png" alt="Add object initializer to Judgements"></p>
-<p>Setelah melakukan perubahan pada sumber data (yang mana hanya data tulis langsung dalam kode), program form akhirnya dapat berjalan.</p>
-<h2 id="form">Form</h2>
-<p>Form ini terdiri dari beberapa elemen:</p>
-<ul>
-<li>1 <code>ComboBox</code> untuk memilih sistem skor,</li>
-<li>9 <code>NumericUpDown</code> untuk melakukan input jumlah, dan</li>
-<li>2 <code>Label</code> untuk menampilkan skor.</li>
-</ul>
-<p>Tergantung jenis sistem yang dipilih, beberapa <em>Judgement</em> tidak terpakai, ditandai dengan properti <code>Used</code> dalam tiap entri <code>Judgement</code>. Oleh karena itu, <code>NumericUpDown</code> yang tidak dipakai akan dimatikan (<code>.Enabled = false</code>). Saya juga tambahkan cek untuk input yang tidak memiliki <code>Judgement</code> terkait, namun tidak didemonstrasikan di sini karena semua entri telah tercakup semua.</p>
-<p>Secara bawaan, <code>NumericUpDown</code> memiliki nilai maksimum 100. Saya ingin lebih dari itu. Jadi saya buka <code>Form1.Designer.cs</code>, yang dibuat oleh UI designer, menambahkan nilai maksimum <code>decimal.MaxValue</code> secara manual pada tiap kotak angka. Dengan begini, angka sangat besar pun bisa didukung tergantung kemampuan sistem.</p>
-<p>Saya lakukan update pada form ketika nilai <code>ComboBox</code> atau dalah satu dari <code>NumericUpDown</code> berubah. Dalam proses update, data dari form akan diambil dan skor akan dihitung, baik nilai skor mentah maupun nilai skor yang dinormalisasi menjadi rentang 0 hingga 1.000.000.</p>
-<p><img src="05_demo_initial.png" alt="Initial demo of blank form"></p>
-<p>Nilai input diambil dari video berikut:</p>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/4CSm5ZWR6Nw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<p>Dan berikut hasilnya. Perhatikan, kedua nilai Fantastic dari video dijumlahkan menjadi satu.</p>
-<p><img src="06_demo_itg.png" alt="Demo using In The Groove scoring"></p>
-<p><img src="07_demo_wf.png" alt="Demo using In Waterfall scoring"></p>
-<p><img src="08_demo_ddrex.png" alt="Demo using DanceDanceRevolution EX scoring"></p>
-<p><img src="09_demo_chunithm.png" alt="Demo using CHUNITHM scoring"></p>
-<p><img src="10_demo_ddrmax.png" alt="Demo using DanceDanceRevolution MAX DP scoring">
-Skor DDRMAX terlihat aneh, karena dalam game tersebut Hold OK bernilai tiga kali lipat dari Perfect (tidak sengaja tertulis Excellent dalam form), dan nilai tersebut yang dianggap sebagai nilai bobot maksimum.</p>
-<h2 id="penutup">Penutup</h2>
-<p>Ini hanya sekedar bukti bahwa saya bisa membuat aplikasi WinForms yang dapat berjalan. Alur proses masih dapat diperbaiki, seperti pada kasus DDRMAX.</p>
-<p>Tetapi sekian dulu untuk minggu ini, kita lihat kelanjutannya di materi minggu depan.</p>
+                <p>Tes</p>
 
             </div>
         </article>
@@ -237,7 +150,7 @@ Skor DDRMAX terlihat aneh, karena dalam game tersebut Hold OK bernilai tiga kali
         <div class="post-info">
             
             
-			    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg><a href="ce0da96871deac31299c6553b59e70accf4a4b89" target="_blank" rel="noopener">ce0da96</a> @ 2023-09-03</p>
+			    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg><a href="73a0498386c727ab9155aff99ce2647a4498e634" target="_blank" rel="noopener">73a0498</a> @ 2023-09-04</p>
   		</div>
     </main>
 

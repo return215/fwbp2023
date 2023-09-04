@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Logs on Cerita Kerangka Kerja</title>
+    <title>Logs on Jiwa Yang Kembali</title>
     <link>http://fwbp2023.return215.xyz/id/log/</link>
-    <description>Recent content in Logs on Cerita Kerangka Kerja</description>
+    <description>Recent content in Logs on Jiwa Yang Kembali</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id</language>
-    <copyright>Jika tidak dinyatakan di setiap artikel, semua konten dilisensikan di bawah lisensi &lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;.</copyright>
-    <lastBuildDate>Sun, 03 Sep 2023 09:09:09 +0700</lastBuildDate><atom:link href="http://fwbp2023.return215.xyz/id/log/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Bila tidak dicantumkan dalam artikel, konten dilindungi lisensi &lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;.</copyright>
+    <lastBuildDate>Mon, 28 Aug 2023 16:13:00 +0700</lastBuildDate><atom:link href="http://fwbp2023.return215.xyz/id/log/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pertemuan 01: WinForms Application</title>
       <link>http://fwbp2023.return215.xyz/id/log/week01/</link>
-      <pubDate>Sun, 03 Sep 2023 09:09:09 +0700</pubDate>
+      <pubDate>Mon, 28 Aug 2023 16:13:00 +0700</pubDate>
       
       <guid>http://fwbp2023.return215.xyz/id/log/week01/</guid>
-      <description>Tugas minggu ini adalah membuat aplikasi Windows Forms. Aplikasi harus bisa menerima input pengguna dan melakukan update pada form.
-Untuk proyek WinForms kali ini, saya mengimplementasikan rhythm game score converter, dimana perhitungan skor akan berubah tergantung dari jenis rhythm game yang dipilih.
-Kesulitan yang saya alami bukanlah dalam membuat form, namun dalam menggunakan data yang saya berikan. Saya dulu punya pengalaman dengan bahasa C# sekitar 6 tahun yang lalu. Ketika itu saya membuat proyek gim berbasis music menggunakan Unity.</description>
+      <description>Tes</description>
     </item>
     
   </channel>
