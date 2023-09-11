@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="In the last project, I built and ran the program in a VM. Now the problem is that I cannot use my webcam through QEMU. I could find a way to pass the webcam through or use a fake virtual webcam, but it&amp;rsquo;s too much effort.
+Instead, I went into the GiGa (Graphics, Interaction, and video Games) lab and borrow a computer there. I chose that lab because I believe they should have a webcam." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://fwbp2023.return215.xyz/log/week03/" />
+
+
+    <title>
+        
+            Week 3: Media Capture Application in WinForms :: Framework Stories 
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.b78c3be9451dc4ca61ca377f3dc2cf2e6345a44c2bae46216a322ef366daa399.css" integrity="sha256-t4w76UUdxMphyjd/PcLPLmNFpEwrrkYhajIu82bao5k=">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+<meta itemprop="name" content="Week 3: Media Capture Application in WinForms">
+<meta itemprop="description" content="In the last project, I built and ran the program in a VM. Now the problem is that I cannot use my webcam through QEMU. I could find a way to pass the webcam through or use a fake virtual webcam, but it&rsquo;s too much effort.
+Instead, I went into the GiGa (Graphics, Interaction, and video Games) lab and borrow a computer there. I chose that lab because I believe they should have a webcam."><meta itemprop="datePublished" content="2023-09-11T08:59:52+07:00" />
+<meta itemprop="dateModified" content="2023-09-11T13:38:40+07:00" />
+<meta itemprop="wordCount" content="1196">
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Week 3: Media Capture Application in WinForms"/>
+<meta name="twitter:description" content="In the last project, I built and ran the program in a VM. Now the problem is that I cannot use my webcam through QEMU. I could find a way to pass the webcam through or use a fake virtual webcam, but it&rsquo;s too much effort.
+Instead, I went into the GiGa (Graphics, Interaction, and video Games) lab and borrow a computer there. I chose that lab because I believe they should have a webcam."/>
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2023-09-11 08:59:52 &#43;0700 &#43;0700" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                FrameworkStories()</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/log">Blog</a></li>
+        <div class="submenu">
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">en</a>
+                <div class="dropdown-content">
+                    
+                        
+                    
+                </div>
+            </li>
+        </div>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://fwbp2023.return215.xyz/log/week03/">Week 3: Media Capture Application in WinForms</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <p>In the <a href="../week01/">last project</a>, I built and ran the program in a VM. Now the problem is that I cannot use my webcam through QEMU. I could find a way to pass the webcam through or use a fake virtual webcam, but it&rsquo;s too much effort.</p>
+<p>Instead, I went into the GiGa (Graphics, Interaction, and video Games) lab and borrow a computer there. I chose that lab because I believe they should have a webcam. Otherwise, it wouldn&rsquo;t be a graphics lab. I was right, they let me use one of their computers and lent a webcam for use.</p>
+<p>From there, I got to work. But instead of following <a href="https://www.youtube.com/watch?v=HUiV10g1VLU">the tutorial</a> and using AForge, I decided to go low and use OpenCV. It was quite a hassle to get it to work, but once it worked, everything went swimmingly.</p>
+<p>As usual, the code for this week&rsquo;s assignment is in <a href="https://github.com/return215/fwbp2023-winforms/tree/master/WinForms-02">my public GitHub Repository</a>.</p>
+<h2 id="getting-the-libraries">Getting the libraries</h2>
+<p>Unlike the tutorial who went on their way to download DLLs from the source website, I use a different approach. It is not as safe as the former method, but it is more convenient to me as the dependencies are tracked.</p>
+<p>The method I use is downloading the libraries through NuGet. The way I do it is by right-clicking on the project and selecting &ldquo;Manage NuGet packages&rdquo;. There, I can just search for the libraries I need. For this project, I use three packages:</p>
+<ul>
+<li>OpenCvSharp4 for Windows</li>
+<li>OpenCvSharp4 extensions</li>
+<li>DirectShowLib</li>
+</ul>
+<p><img src="./01_opencvsharp4.png" alt="OpenCvSharp in NuGet"></p>
+<p><img src="./01_opencvsharp4_ext.png" alt="OpenCvSharp extensions in NuGet"></p>
+<p><img src="./01_directshowlib.png" alt="DirectShowLib in NuGet"></p>
+<p>But first, what is OpenCV? Well, it&rsquo;s an open source library for computer vision. AForge is similar to OpenCV, but runs under a different license. Although I can <a href="https://stackoverflow.com/a/4775120">use it alongside AForge</a>, I personally refuse to use it for now. Also, AForge uses LGPL for licensing (and GPL for older versions and specific components), while OpenCV uses Apache license (from 4.5.0). But regardless of license, you should choose whichever you like. I may plan to use OpenCV in the future, so I might as well jump in.</p>
+<h2 id="the-form-layout">The Form Layout</h2>
+<p><img src="./02_layout.png" alt="Form layout"></p>
+<p>The form is a 640x400 window with a combo box, five buttons, a table layout, two picture boxes inside the table, and a label.</p>
+<ul>
+<li>The combo box will list the capture devices</li>
+<li>&ldquo;Start&rdquo; button to start capturing from the selected device</li>
+<li>&ldquo;Capture&rdquo; to take a snap from the capture device</li>
+<li>&ldquo;Save image&rdquo; to save the captured image as shown in the output to a file</li>
+<li>&ldquo;Clear&rdquo; to clear the image snapshot</li>
+<li>&ldquo;Exit&rdquo; to close the form</li>
+<li>A label (not shown in this screenshot) to show the name and location of the captured image</li>
+</ul>
+<h2 id="setting-up-the-capture-devices">Setting up the capture device(s)</h2>
+<p>In order to remain faithful to the design of the original, I would like the program to be able to handle switching between multiple devices. The first thing in order is to get the list of devices to be used by <code>OpenCVSharp</code>. But there&rsquo;s <a href="https://stackoverflow.com/q/64165484">a problem</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> videoCapture = <span style="color:#66d9ef">new</span> VideoCapture(<span style="color:#ae81ff">0</span>);
+</span></span></code></pre></div><p>In this method, you are required to pass the device by its index as reported by the library. However, just passing the number itself may not work properly, especially on multiple devices with a user-specified default camera. OpenCV index 0 may not necessarily be device index 0, as reported in the problem linked above.</p>
+<p>The solution is to pick one particular backend and stick to it. In this case, I am using DirectShow backend, hence I installed <code>DirectShowLib</code> to help me in this process. Luckily, <code>DsDevice</code> has just the method for it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> devices = DsDevice.GetDevicesOfCat(FilterCategory.VideoInputDevice);
+</span></span></code></pre></div><p>This method will return a <code>List&lt;DsDevice&gt;</code> in the order that DirectShow expects it to have. Then, just assign an ascending number to each device alongside its device path and name if desired. Here&rsquo;s a more complete listing:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CameraDevicesEnumerator</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> List&lt;CameraDevice&gt; GetAllConnectedCameras()
+</span></span><span style="display:flex;"><span>	{
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">var</span> cameras = <span style="color:#66d9ef">new</span> List&lt;CameraDevice&gt;();
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">var</span> videoInputDevices = DsDevice.GetDevicesOfCat(FilterCategory.VideoInputDevice);
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">int</span> openCvId = <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> videoInputDevices.Select(v =&gt; <span style="color:#66d9ef">new</span> CameraDevice()
+</span></span><span style="display:flex;"><span>		{
+</span></span><span style="display:flex;"><span>			DeviceId = v.DevicePath,
+</span></span><span style="display:flex;"><span>			Name = v.Name,
+</span></span><span style="display:flex;"><span>			OpenCvId = openCvId++
+</span></span><span style="display:flex;"><span>		}).ToList();
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">CameraDevice</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> OpenCvId { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> Name { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> DeviceId { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Once it&rsquo;s done, we can use these values inside a <code>ComboBox</code> to allow selection. All we need to do is specify its <code>DataSource</code> and set the values accordingly.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> FormVideoCapture_Load(<span style="color:#66d9ef">object</span> sender, EventArgs e)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// initialize combo box</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> dataSource = CameraDevicesEnumerator.GetAllConnectedCameras();
+</span></span><span style="display:flex;"><span>	comboDevice.DataSource = dataSource;
+</span></span><span style="display:flex;"><span>	comboDevice.DisplayMember = <span style="color:#e6db74">&#34;Name&#34;</span>;
+</span></span><span style="display:flex;"><span>	comboDevice.ValueMember = <span style="color:#e6db74">&#34;OpenCvId&#34;</span>;
+</span></span><span style="display:flex;"><span>	comboDevice.SelectedIndex = <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The values from the <code>ComboBox</code> can then be used to initialize our camera capture.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> StartCapture()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// make sure the type is CameraDevice</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> (comboDevice.SelectedItem <span style="color:#66d9ef">is</span> not CameraDevice selectedItem)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> index = selectedItem.OpenCvId;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> (!captureDev.Open(index, VideoCaptureAPIs.DSHOW))
+</span></span><span style="display:flex;"><span>	{
+</span></span><span style="display:flex;"><span>		MessageBox.Show(<span style="color:#e6db74">$&#34;Unable to open camera {selectedItem.Name ?? &#34;</span>Unknown<span style="color:#e6db74">&#34;}.&#34;</span>);
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	btnStart.Text = <span style="color:#e6db74">&#34;Stop&#34;</span>;
+</span></span><span style="display:flex;"><span>	bgwRender.RunWorkerAsync();
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We will cover <code>bgwRender</code> right after this. But up until this point, our video device is all set up.</p>
+<h2 id="capturing-the-feed">Capturing the feed</h2>
+<p>The <code>bgwRender</code> component is a background worker, and you should add that through the Designer. This worker handles the update of the preview. I also set the properties <code>WorkerReportsProgress</code> and <code>WorkerSupportsCancellation</code> to <code>true</code> so that we can update the preview <code>PictureBox</code> every frame and stop the capture as we wish. I choose 60 FPS as the update rate, but you can choose any number if you wish.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> bgwRender_DoWork(<span style="color:#66d9ef">object</span> sender, System.ComponentModel.DoWorkEventArgs e)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	BackgroundWorker worker = sender <span style="color:#66d9ef">as</span> BackgroundWorker;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">while</span> (!worker.CancellationPending)
+</span></span><span style="display:flex;"><span>	{
+</span></span><span style="display:flex;"><span>		worker.ReportProgress(<span style="color:#ae81ff">0</span>, CaptureFrame());
+</span></span><span style="display:flex;"><span>		Thread.Sleep(<span style="color:#ae81ff">1000</span> / frameUpdatesPerSec);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The meat of this program is the capturing of the frames. This is where the <code>OpenCvSharp.Extensions</code> comes in with <code>BitmapConverter</code>. This method takes the image data (in the form of a Material) and converts it into a bitmap data. The Bitmap data is internal to C#, so it can be easily recognized by other classes such as our <code>PictureBox</code>es.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> Bitmap CaptureFrame()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">using</span> (<span style="color:#66d9ef">var</span> mat = captureDev.RetrieveMat())
+</span></span><span style="display:flex;"><span>	{
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">var</span> frameBitmap = BitmapConverter.ToBitmap(mat);
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> frameBitmap;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Once we get the bitmap data, we can use it inside our <code>PictureBox</code>es.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> bgwRender_ProgressChanged(<span style="color:#66d9ef">object</span> sender, System.ComponentModel.ProgressChangedEventArgs e)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	Bitmap bitmap = e.UserState <span style="color:#66d9ef">as</span> Bitmap;
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// clear previous image</span>
+</span></span><span style="display:flex;"><span>	picPreview.Image?.Dispose();
+</span></span><span style="display:flex;"><span>	picPreview.Image = bitmap;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> btnCapture_Click(<span style="color:#66d9ef">object</span> sender, EventArgs e)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	Bitmap bitmap = CaptureFrame();
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// clear previous image</span>
+</span></span><span style="display:flex;"><span>	picCaptured.Image?.Dispose();
+</span></span><span style="display:flex;"><span>	picCaptured.Image = bitmap;
+</span></span><span style="display:flex;"><span>	labelSavedImage.Text = <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Finally, it&rsquo;s time to save our image. I choose to save in the user&rsquo;s Pictures folder as a JPEG file with the filename <code>Capture_yyyy-MM-dd_HH-mm-ss.jpg</code>. Unfortunately I forgot to handle empty images, so a fix may be issued later. The article and the source will be updated accordingly.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> btnSave_Click(<span style="color:#66d9ef">object</span> sender, EventArgs e)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> picturesDir = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> finalPath = <span style="color:#e6db74">$@&#34;{picturesDir}\Capture_{DateTime.Now:yyyy-MM-dd_HH-mm-ss}.jpg&#34;</span>;
+</span></span><span style="display:flex;"><span>	picCaptured.Image.Save(finalPath, System.Drawing.Imaging.ImageFormat.Jpeg);
+</span></span><span style="display:flex;"><span>	labelSavedImage.Text = <span style="color:#e6db74">$&#34;Saved to {finalPath}&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>For extra style points, I also implemented stopping of the video capture, clearing of the preview when stopped, clearing of captured image, and a prompt that says where the image is saved. All that and much more can be seen in my source repo.</p>
+<h2 id="results">Results</h2>
+<p><img src="./03_window.png" alt="Working media capture form"></p>
+<p><img src="03_output.jpg" alt="captured image"></p>
+<h2 id="credits">Credits</h2>
+<p>Thank you once again to the folks at GiGa that allow me to use their lab for this assignment.</p>
+<p>I couldn&rsquo;t have done it without the help of the following projects:</p>
+<ul>
+<li><a href="https://github.com/FrancescoBonizzi/WebcamControl-WPF-With-OpenCV">WebcamControl WPF With OpenCV</a></li>
+<li><a href="https://github.com/shimat/opencvsharp_samples">OpenCVSharp sample codes</a></li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+            
+			    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg><a href="896f0f7f3ef825956ada514101564fe9d5158874" target="_blank" rel="noopener">896f0f7</a> @ 2023-09-11</p>
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.205d491810c28f95aa953fae884e1c27abe13fdf93ec63b882d0036b248d4a6282eb2d134e4e7225c6ad6e86db87b08488a361ca4a7383d01fcff43f3d57b9c3.js" integrity="sha512-IF1JGBDCj5WqlT&#43;uiE4cJ6vhP9&#43;T7GO4gtADaySNSmKC6y0TTk5yJcatbobbh7CEiKNhykpzg9Afz/Q/PVe5ww=="></script>
+
+
+
+    </body>
+</html>
