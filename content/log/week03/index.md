@@ -1,7 +1,7 @@
 ---
 title: "Week 3: Media Capture Application in WinForms"
 date: 2023-09-11T08:59:52+07:00
-draft: true
+draft: false
 ---
 
 In the [last project](../week01/), I built and ran the program in a VM. Now the problem is that I cannot use my webcam through QEMU. I could find a way to pass the webcam through or use a fake virtual webcam, but it's too much effort.
