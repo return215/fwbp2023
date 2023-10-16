@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>id</language>
     <copyright>Jika tidak dinyatakan di setiap artikel, semua konten dilisensikan di bawah lisensi &lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;.</copyright>
-    <lastBuildDate>Sun, 03 Sep 2023 09:09:09 +0700</lastBuildDate><atom:link href="http://fwbp2023.return215.xyz/id/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Oct 2023 07:28:54 +0700</lastBuildDate><atom:link href="http://fwbp2023.return215.xyz/id/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quiz PBKK A</title>
+      <link>http://fwbp2023.return215.xyz/id/log/week08/</link>
+      <pubDate>Mon, 16 Oct 2023 07:28:54 +0700</pubDate>
+      
+      <guid>http://fwbp2023.return215.xyz/id/log/week08/</guid>
+      <description>Pertanyaan Jelaskan struktur framework , dan apa saja kegunaanya dalam pengembangan Perangkat Lunak? Dalam pembuatan aplikasi, dikenal dengan Universal Windows Platform. Digunakan untuk membuat aplikasi yang mempunyai karakteristik seperti apa? Jelaskan sertai dengan contoh. Untuk memperjelas jawaban no 2, Buatlah desain aplikasi Koleksi Album foto yang bisa menghimpun foto, deskripsi , informasi foto diambil/ metadata, dan juga bisa menghapus maupun update. Implementasikan soal no 4, kemudian buat video tutorial pengerjaannya, upload di Youtube, dan embedded di blog dokumentasi.</description>
+    </item>
+    
     <item>
       <title>Pertemuan 01: WinForms Application</title>
       <link>http://fwbp2023.return215.xyz/id/log/week01/</link>
