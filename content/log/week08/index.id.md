@@ -4,6 +4,8 @@ date: 2023-10-16T07:28:54+07:00
 draft: false
 ---
 
+Quiz ini menjadi bagian dari nilai evaluasi tengah semester (ETS).
+
 ## Pertanyaan
 
 1. Jelaskan struktur framework , dan apa saja kegunaanya dalam pengembangan Perangkat Lunak?
@@ -40,4 +42,10 @@ Contoh aplikasi yang menggunakan UWP adalah WhatsApp (yang baru), Facebook Messe
 ### 3. Desain Album Foto
 
 ### 4. Implementasi Album Foto
+
+Source code dapat dilihat di [repositori GitHub](https://github.com/return215/fwbp2023-midexam)
+
+## Referensi
+
+- Naik, Kishor. (2013). _WPF - Image Gallery in WPF_. Blogspot.com. https://kishor-naik-dotnet.blogspot.com/2011/05/wpf-image-gallery-in-wpf.html
 
