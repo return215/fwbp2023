@@ -43,7 +43,13 @@ Contoh aplikasi yang menggunakan UWP adalah WhatsApp (yang baru), Facebook Messe
 
 ### 4. Implementasi Album Foto
 
-Source code dapat dilihat di [repositori GitHub](https://github.com/return215/fwbp2023-midexam)
+Source code dapat dilihat di [repositori GitHub](https://github.com/return215/fwbp2023-midexam).
+
+Video demonstrasi: 
+
+{{< youtube Pi4vjLLBh7o >}}
+
+Gambar yang digunakan dapat ditemukan di [laman PixAI saya](https://pixai.art/@return215).
 
 ## Referensi
 
