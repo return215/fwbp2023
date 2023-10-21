@@ -47,5 +47,11 @@ Source code dapat dilihat di [repositori GitHub](https://github.com/return215/fw
 
 ## Referensi
 
+- Carr, Richard. (2015). WPF Controls - Window - Showing Dialog Boxes (Page 2 of 2). Blackwasp.co.uk. http://www.blackwasp.co.uk/WPFWindowShowDialog_2.aspx
+- CodeDocu Developer C# Asp Net Angular. (2017). WPF Load Images as Thumbnails with faster Speed [YouTube Video]. In _YouTube_. https://www.youtube.com/watch?v=p4tH5-ufvBc
+- Grech, Andreas. (2009, April 8). _WPF ListView: Attaching a double-click (on an item) event_. Stack Overflow. https://stackoverflow.com/questions/728205/wpf-listview-attaching-a-double-click-on-an-item-event
 - Naik, Kishor. (2013). _WPF - Image Gallery in WPF_. Blogspot.com. https://kishor-naik-dotnet.blogspot.com/2011/05/wpf-image-gallery-in-wpf.html
+- Stovell, Paul. (2013). WPF Navigation - Paul Stovell. Paul Stovell; Paul Stovell. https://web.archive.org/web/20130405072224/http://paulstovell.com/blog/wpf-navigation
+- n.a. _Automatically resize a Window to fit content in WPF_. (2023). C-Sharpcorner.com. https://www.c-sharpcorner.com/Resources/894/automatically-resize-a-window-to-fit-content-in-wpf.aspx
+
 
