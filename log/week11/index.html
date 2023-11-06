@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Source code of the project will be shared as soon as possible.
+I have to set the correct permissions for Postgres and CI to work. For Postgres, this can be seen from the output of the command grep postgres /etc/passwd directly on the image. I can&amp;rsquo;t do it on the running containers itsef becaused it exited before I got the chance to run it, and it says 999. As for CI, it was specified right in the compose file below, which is 9999." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://fwbp2023.return215.xyz/log/week11/" />
+
+
+    <title>
+        
+            Getting CodeIgniter to work with Podman :: Framework Stories 
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.b78c3be9451dc4ca61ca377f3dc2cf2e6345a44c2bae46216a322ef366daa399.css" integrity="sha256-t4w76UUdxMphyjd/PcLPLmNFpEwrrkYhajIu82bao5k=">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+<meta itemprop="name" content="Getting CodeIgniter to work with Podman">
+<meta itemprop="description" content="Source code of the project will be shared as soon as possible.
+I have to set the correct permissions for Postgres and CI to work. For Postgres, this can be seen from the output of the command grep postgres /etc/passwd directly on the image. I can&rsquo;t do it on the running containers itsef becaused it exited before I got the chance to run it, and it says 999. As for CI, it was specified right in the compose file below, which is 9999."><meta itemprop="datePublished" content="2023-11-06T09:18:29+07:00" />
+<meta itemprop="dateModified" content="2023-11-06T09:45:06+07:00" />
+<meta itemprop="wordCount" content="236">
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Getting CodeIgniter to work with Podman"/>
+<meta name="twitter:description" content="Source code of the project will be shared as soon as possible.
+I have to set the correct permissions for Postgres and CI to work. For Postgres, this can be seen from the output of the command grep postgres /etc/passwd directly on the image. I can&rsquo;t do it on the running containers itsef becaused it exited before I got the chance to run it, and it says 999. As for CI, it was specified right in the compose file below, which is 9999."/>
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2023-11-06 09:18:29 &#43;0700 &#43;0700" />
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                FrameworkStories()</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/log">Blog</a></li>
+        <div class="submenu">
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">en</a>
+                <div class="dropdown-content">
+                    
+                        
+                    
+                </div>
+            </li>
+        </div>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://fwbp2023.return215.xyz/log/week11/">Getting CodeIgniter to work with Podman</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <p>Source code of the project will be shared as soon as possible.</p>
+<p>I have to set the correct permissions for Postgres and CI to work. For Postgres, this can be seen from the output of the command <code>grep postgres /etc/passwd</code> directly on the image. I can&rsquo;t do it on the running containers itsef becaused it exited before I got the chance to run it, and it says 999. As for CI, it was specified right in the compose file below, which is 9999. So, on the project folder, I run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>podman unshare chown 999:999 ./db
+</span></span><span style="display:flex;"><span>podman unshare chown 9999:9999 ./app
+</span></span><span style="display:flex;"><span>podman unshare chown 9999:9999 ./ssl
+</span></span></code></pre></div><p>Additional work is needed for active SELinux systems. To figure that out, I run the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>getenforce
+</span></span></code></pre></div><p>Mine says <code>Enforcing</code>. But if it shows something else, you don&rsquo;t need to do the following workaround. Docker provides an option to do this, which is to mount the volumes to the containers using the <code>Z</code> flag which means &ldquo;private unshared bind mount&rdquo;. This flag may not be necessary if you are not runnning an enforcing SELinux system.</p>
+<p>My <code>docker-compose.yml</code> therefore looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">app-ci4</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">shinsenter/codeigniter4:latest</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./app:/var/www/html:Z</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./ssl:/etc/ssl/web:Z</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">TZ</span>: <span style="color:#ae81ff">UTC</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">PUID</span>: <span style="color:#ae81ff">${UID:-9999}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">PGID</span>: <span style="color:#ae81ff">${GID:-9999}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;8080:80&#34;</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;8443:443&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">links</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;db-pg&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">db-pg</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">postgres:12-bullseye</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./db:/var/lib/postgresql/data:Z</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">POSTGRES_PASSWORD</span>: <span style="color:#ae81ff">unsecurepassword</span>
+</span></span></code></pre></div><p>Relevant articles:</p>
+<ul>
+<li><a href="https://www.redhat.com/sysadmin/user-namespaces-selinux-rootless-containers">Using Podman user namespaces for rootless containers</a></li>
+<li><a href="https://docs.docker.com/storage/bind-mounts/#configure-the-selinux-label">Configure SELinux label for bind mounts</a></li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+            
+			    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-commit"><circle cx="12" cy="12" r="4"></circle><line x1="1.05" y1="12" x2="7" y2="12"></line><line x1="17.01" y1="12" x2="22.96" y2="12"></line></svg><a href="689ae8c7a241554f8b0b4415d537521a5a841e3b" target="_blank" rel="noopener">689ae8c</a> @ 2023-11-06</p>
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.205d491810c28f95aa953fae884e1c27abe13fdf93ec63b882d0036b248d4a6282eb2d134e4e7225c6ad6e86db87b08488a361ca4a7383d01fcff43f3d57b9c3.js" integrity="sha512-IF1JGBDCj5WqlT&#43;uiE4cJ6vhP9&#43;T7GO4gtADaySNSmKC6y0TTk5yJcatbobbh7CEiKNhykpzg9Afz/Q/PVe5ww=="></script>
+
+
+
+    </body>
+</html>
