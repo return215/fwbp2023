@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cerita Kerangka Kerja</title>
-    <link>http://fwbp2023.return215.xyz/id/</link>
+    <link>https://fwbp2023.return215.xyz/id/</link>
     <description>Recent content on Cerita Kerangka Kerja</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id</language>
     <copyright>Jika tidak dinyatakan di setiap artikel, semua konten dilisensikan di bawah lisensi &lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;.</copyright>
-    <lastBuildDate>Mon, 27 Nov 2023 07:45:52 +0700</lastBuildDate><atom:link href="http://fwbp2023.return215.xyz/id/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Nov 2023 07:45:52 +0700</lastBuildDate><atom:link href="https://fwbp2023.return215.xyz/id/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Quiz 2 PBKK A: Tiket Bioskop (CodeIgniter)</title>
-      <link>http://fwbp2023.return215.xyz/id/log/week14/</link>
+      <link>https://fwbp2023.return215.xyz/id/log/week14/</link>
       <pubDate>Mon, 27 Nov 2023 07:45:52 +0700</pubDate>
       
-      <guid>http://fwbp2023.return215.xyz/id/log/week14/</guid>
+      <guid>https://fwbp2023.return215.xyz/id/log/week14/</guid>
       <description>Muhammad Hidayat (05111040000131)
 Deskripsi Aplikasi dan Fitur Aplikasi Tiket Bioskop adalah aplikasi berbasis web untuk memesan tiket secara online.
 Aplikasi ini akan memiliki fitur:
@@ -25,20 +25,20 @@ Demonstrasi stub</description>
     
     <item>
       <title>Quiz PBKK A</title>
-      <link>http://fwbp2023.return215.xyz/id/log/week08/</link>
+      <link>https://fwbp2023.return215.xyz/id/log/week08/</link>
       <pubDate>Mon, 16 Oct 2023 07:28:54 +0700</pubDate>
       
-      <guid>http://fwbp2023.return215.xyz/id/log/week08/</guid>
+      <guid>https://fwbp2023.return215.xyz/id/log/week08/</guid>
       <description>Quiz ini menjadi bagian dari nilai evaluasi tengah semester (ETS).
 Pertanyaan Jelaskan struktur framework , dan apa saja kegunaanya dalam pengembangan Perangkat Lunak? Dalam pembuatan aplikasi, dikenal dengan Universal Windows Platform. Digunakan untuk membuat aplikasi yang mempunyai karakteristik seperti apa? Jelaskan sertai dengan contoh. Untuk memperjelas jawaban no 2, Buatlah desain aplikasi Koleksi Album foto yang bisa menghimpun foto, deskripsi , informasi foto diambil/ metadata, dan juga bisa menghapus maupun update.</description>
     </item>
     
     <item>
       <title>Pertemuan 01: WinForms Application</title>
-      <link>http://fwbp2023.return215.xyz/id/log/week01/</link>
+      <link>https://fwbp2023.return215.xyz/id/log/week01/</link>
       <pubDate>Sun, 03 Sep 2023 09:09:09 +0700</pubDate>
       
-      <guid>http://fwbp2023.return215.xyz/id/log/week01/</guid>
+      <guid>https://fwbp2023.return215.xyz/id/log/week01/</guid>
       <description>Tugas minggu ini adalah membuat aplikasi Windows Forms. Aplikasi harus bisa menerima input pengguna dan melakukan update pada form.
 Untuk proyek WinForms kali ini, saya mengimplementasikan rhythm game score converter, dimana perhitungan skor akan berubah tergantung dari jenis rhythm game yang dipilih.
 Kesulitan yang saya alami bukanlah dalam membuat form, namun dalam menggunakan data yang saya berikan. Saya dulu punya pengalaman dengan bahasa C# sekitar 6 tahun yang lalu. Ketika itu saya membuat proyek gim berbasis music menggunakan Unity.</description>
@@ -46,10 +46,10 @@ Kesulitan yang saya alami bukanlah dalam membuat form, namun dalam menggunakan d
     
     <item>
       <title>Tentang</title>
-      <link>http://fwbp2023.return215.xyz/id/about/</link>
+      <link>https://fwbp2023.return215.xyz/id/about/</link>
       <pubDate>Mon, 28 Aug 2023 14:49:36 +0700</pubDate>
       
-      <guid>http://fwbp2023.return215.xyz/id/about/</guid>
+      <guid>https://fwbp2023.return215.xyz/id/about/</guid>
       <description>Blog ini dibuat untuk memenuhi ketentuan tugas kelas dalam mata kuliah Pemrograman Berbasis Kerangka Kerja di Institut Teknologi Sepuluh Nopember.
 Nama: Muhammad Hidayat NRP: 05111940000131 Mata Kuliah: Pemrograman Berbasis Kerangka Kerja Kelas: A Dosen: Fajar Baskoro, S.Kom., M.T. Jadwal: Monday, 07:00 WIB (UTC+7) Metode kelas: campuran (kelas online atau offline tergantung dosen) </description>
     </item>

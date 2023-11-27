@@ -2,56 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Logs on Framework Stories</title>
-    <link>http://fwbp2023.return215.xyz/log/</link>
+    <link>https://fwbp2023.return215.xyz/log/</link>
     <description>Recent content in Logs on Framework Stories</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Otherwise stated per article, all content is licensed under &lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;.</copyright>
-    <lastBuildDate>Mon, 27 Nov 2023 07:45:46 +0700</lastBuildDate><atom:link href="http://fwbp2023.return215.xyz/log/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Nov 2023 07:45:46 +0700</lastBuildDate><atom:link href="https://fwbp2023.return215.xyz/log/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating Theater Application in CodeIgniter</title>
-      <link>http://fwbp2023.return215.xyz/log/week14/</link>
+      <link>https://fwbp2023.return215.xyz/log/week14/</link>
       <pubDate>Mon, 27 Nov 2023 07:45:46 +0700</pubDate>
       
-      <guid>http://fwbp2023.return215.xyz/log/week14/</guid>
+      <guid>https://fwbp2023.return215.xyz/log/week14/</guid>
       <description>Only available in Indonesian.</description>
     </item>
     
     <item>
       <title>Getting CodeIgniter to work with Podman</title>
-      <link>http://fwbp2023.return215.xyz/log/week11/</link>
+      <link>https://fwbp2023.return215.xyz/log/week11/</link>
       <pubDate>Mon, 06 Nov 2023 09:18:29 +0700</pubDate>
       
-      <guid>http://fwbp2023.return215.xyz/log/week11/</guid>
+      <guid>https://fwbp2023.return215.xyz/log/week11/</guid>
       <description>Source code of the project will be shared as soon as possible.
 I have to set the correct permissions for Postgres and CI to work. For Postgres, this can be seen from the output of the command grep postgres /etc/passwd directly on the image. I can&amp;rsquo;t do it on the running containers itsef becaused it exited before I got the chance to run it, and it says 999. As for CI, it was specified right in the compose file below, which is 9999.</description>
     </item>
     
     <item>
       <title>Mid-Term Exam: Desktop Application Framework with .NET</title>
-      <link>http://fwbp2023.return215.xyz/log/week08/</link>
+      <link>https://fwbp2023.return215.xyz/log/week08/</link>
       <pubDate>Mon, 16 Oct 2023 07:28:54 +0700</pubDate>
       
-      <guid>http://fwbp2023.return215.xyz/log/week08/</guid>
+      <guid>https://fwbp2023.return215.xyz/log/week08/</guid>
       <description>Only available in Indonesian.</description>
     </item>
     
     <item>
       <title>Week 3: Media Capture Application in WinForms</title>
-      <link>http://fwbp2023.return215.xyz/log/week03/</link>
+      <link>https://fwbp2023.return215.xyz/log/week03/</link>
       <pubDate>Mon, 11 Sep 2023 08:59:52 +0700</pubDate>
       
-      <guid>http://fwbp2023.return215.xyz/log/week03/</guid>
+      <guid>https://fwbp2023.return215.xyz/log/week03/</guid>
       <description>In the last project, I built and ran the program in a VM. Now the problem is that I cannot use my webcam through QEMU. I could find a way to pass the webcam through or use a fake virtual webcam, but it&amp;rsquo;s too much effort.
 Instead, I went into the GiGa (Graphics, Interaction, and video Games) lab and borrow a computer there. I chose that lab because I believe they should have a webcam.</description>
     </item>
     
     <item>
       <title>Week 1: WinForms Application</title>
-      <link>http://fwbp2023.return215.xyz/log/week01/</link>
+      <link>https://fwbp2023.return215.xyz/log/week01/</link>
       <pubDate>Sun, 03 Sep 2023 06:06:06 +0700</pubDate>
       
-      <guid>http://fwbp2023.return215.xyz/log/week01/</guid>
+      <guid>https://fwbp2023.return215.xyz/log/week01/</guid>
       <description>The task at hand is to create a working Windows Forms application. It should be able to receive user input through form controls and update the form accordingly.
 For this WinForms project, I decided to implement a rhythm game score converter, where it will change the scoring system based on the type of game selected.
 The biggest challenge, however, is not making the form to work, but to make the data I create to initialize properly.</description>
