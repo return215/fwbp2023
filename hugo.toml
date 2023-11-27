@@ -1,4 +1,4 @@
-baseURL = 'http://fwbp2023.return215.xyz/'
+baseURL = 'https://fwbp2023.return215.xyz/'
 languageCode = 'en-us'
 title = 'Framework Stories'
 theme = 'hello-friend-ng'
