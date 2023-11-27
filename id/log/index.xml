@@ -15,12 +15,9 @@
       
       <guid>https://fwbp2023.return215.xyz/id/log/week14/</guid>
       <description>Muhammad Hidayat (05111040000131)
-Deskripsi Aplikasi dan Fitur Aplikasi Tiket Bioskop adalah aplikasi berbasis web untuk memesan tiket secara online.
-Aplikasi ini akan memiliki fitur:
-memesan tiket melakukan pembayaran melihat jadwal film melihat tiket yang telah dipesan Untuk sementara, tidak ada fitur pembayaran untuk meringkas pengerjaan.
-Desain Antarmuka stub
-Implementasi stub
-Demonstrasi stub</description>
+Deskripsi Aplikasi dan Fitur Aplikasi Tiket Bioskop adalah aplikasi berbasis web untuk memesan tiket secara online. Bioskop ini akan menerima penonton dengan sistem persetujuan tanpa pembayaran. Calon penonton akan melakukan pemesanan, dan admin bioskop akan melakukan persetujuan. Jika disetujui, penonton dapat melihat tiket mereka dan menunjukkan tiket tersebut ketika datang ke bioskop.
+Penonton film dapat:
+melihat jadwal film memesan tiket melihat pesanan tiket melihat tiket yang telah dipesan Admin bioskop dapat:</description>
     </item>
     
     <item>
